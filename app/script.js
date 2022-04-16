@@ -12,35 +12,35 @@ const PROJECTS = [
   new PROJECT(
     'Móveis Planejados',
     'Conceitos básicos de HTML e CSS.',
-    `./assets/project1.png`,
+    './assets/project1.png',
     `https://codepen.io/WhosMonica/full/JjMprvQ`,
     1
   ),
   new PROJECT(
     'Treine.me ',
     'Tags semânticas do HTML.',
-    `./assets/project2.png`,
+    './assets/project2.png',
     `https://codepen.io/WhosMonica/full/MWrVaeZ`,
     2
   ),
   new PROJECT(
     ' Rocket.sekt',
     'Landing Page',
-    `./assets/project4.png`,
+    './assets/project4.png',
     `https://codepen.io/WhosMonica/full/popLEjz`,
     4
   ),
   new PROJECT(
     'Formulário',
     'Tags de formulário, pseudo-classes e Flexbox.',
-    `./assets/project5.png`,
+    './assets/project5.png',
     `https://codepen.io/WhosMonica/full/vYpVWvM`,
     5
   ),
   new PROJECT(
     'Space Cream',
     'Display Grid, responsividade e keyframes.',
-    `./assets/project6.png`,
+    './assets/project6.png',
     `https://codepen.io/WhosMonica/full/dyJQXGZ`,
     6
   ),
