@@ -1,8 +1,8 @@
 class PROJECT {
-  constructor(title, description, gif, pen, id) {
+  constructor(title, description, img, pen, id) {
     this.title = title;
     this.description = description;
-    this.gif = gif;
+    this.img = img;
     this.pen = pen;
     this.id = id;
   }
@@ -12,35 +12,35 @@ const PROJECTS = [
   new PROJECT(
     'Móveis Planejados',
     'Conceitos básicos de HTML e CSS.',
-    `./assets/ezgif-5-43200ea06a.gif`,
+    `./assets/project1.png`,
     `https://codepen.io/WhosMonica/full/JjMprvQ`,
     1
   ),
   new PROJECT(
     'Treine.me ',
     'Tags semânticas do HTML.',
-    `./assets/ezgif-5-43200ea06a.gif`,
+    `./assets/project2.png`,
     `https://codepen.io/WhosMonica/full/MWrVaeZ`,
     2
   ),
   new PROJECT(
     ' Rocket.sekt',
     'Landing Page',
-    `./assets/ezgif-5-43200ea06a.gif`,
+    `./assets/project4.png`,
     `https://codepen.io/WhosMonica/full/popLEjz`,
     4
   ),
   new PROJECT(
     'Formulário',
     'Tags de formulário, pseudo-classes e Flexbox.',
-    `./assets/ezgif-5-43200ea06a.gif`,
+    `./assets/project5.png`,
     `https://codepen.io/WhosMonica/full/vYpVWvM`,
     5
   ),
   new PROJECT(
     'Space Cream',
     'Display Grid, responsividade e keyframes.',
-    `./assets/ezgif-5-43200ea06a.gif`,
+    `./assets/project6.png`,
     `https://codepen.io/WhosMonica/full/dyJQXGZ`,
     6
   ),
@@ -83,8 +83,8 @@ function createContainer(index) {
       " target="_blank">
       Veja no CodePen!</a>`;
   let descriptionP = `<p> ${obj.description} </p>`;
-  let gif = `<img src="${obj.gif}"/> `;
+  let img = `<img src="${obj.img}"/> `;
   let back = `<button onClick="toggleDisplay()"> Voltar </button>`;
 
-  hiddenContainer.innerHTML = `${containerTitle} ${descriptionP} ${pageLink} ${gif} ${back}`;
+  hiddenContainer.innerHTML = `${containerTitle} ${descriptionP} ${pageLink} ${img} ${back}`;
 }
