@@ -84,7 +84,7 @@ function createContainer(index) {
       Veja no CodePen!</a>`;
   let descriptionP = `<p> ${obj.description} </p>`;
   let img = `<img src="${obj.img}"/> `;
-  let back = `<button onClick="toggleDisplay()"> Voltar </button>`;
+  let back = `<button onClick="toggleDisplay()"> voltar </button>`;
 
   hiddenContainer.innerHTML = `${containerTitle} ${descriptionP} ${pageLink} ${img} ${back}`;
 }

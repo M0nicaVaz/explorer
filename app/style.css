@@ -178,20 +178,24 @@ h1::after {
 }
 
 .hidden-container button {
-  width: 8rem;
-  padding: 1rem 2rem;
-  margin-top: 10px;
-  border-radius: 5px;
   align-self: center;
+
+  margin-top: 10px;
+
+  font-variant: small-caps;
+  font-family: 'Akshar', sans-serif;
+  font-size: 2rem;
+  line-height: 1.8rem;
+
+  border: none;
   background: inherit;
-  border: 2px solid var(--purple);
-  box-shadow: 0.5px 0.5px 0.5px rgba(0, 0, 0, 0.432);
-  color: var(--purple);
+  border-bottom: 3px solid var(--purple);
+
+  color: var(--light-bg);
 }
+
 .hidden-container button:hover {
   color: var(--blue);
-  border: 2px solid var(--blue);
-  text-shadow: 1px 1px rgb(19, 19, 19);
   cursor: pointer;
 }
 
