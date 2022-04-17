@@ -1,4 +1,4 @@
-class PROJECT {
+class Project {
   constructor(title, description, img, pen, id) {
     this.title = title;
     this.description = description;
@@ -9,35 +9,35 @@ class PROJECT {
 }
 
 const PROJECTS = [
-  new PROJECT(
+  new Project(
     'Móveis Planejados',
     'Conceitos básicos de HTML e CSS.',
     './assets/project1.PNG',
     `https://codepen.io/WhosMonica/full/JjMprvQ`,
     1
   ),
-  new PROJECT(
+  new Project(
     'Treine.me ',
     'Tags semânticas do HTML.',
     './assets/project2.PNG',
     `https://codepen.io/WhosMonica/full/MWrVaeZ`,
     2
   ),
-  new PROJECT(
+  new Project(
     ' Rocket.sekt',
     'Landing Page',
     './assets/project4.PNG',
     `https://codepen.io/WhosMonica/full/popLEjz`,
     4
   ),
-  new PROJECT(
+  new Project(
     'Formulário',
     'Tags de formulário, pseudo-classes e Flexbox.',
     './assets/project5.PNG',
     `https://codepen.io/WhosMonica/full/vYpVWvM`,
     5
   ),
-  new PROJECT(
+  new Project(
     'Space Cream',
     'Display Grid, responsividade e keyframes.',
     './assets/project6.PNG',
@@ -53,7 +53,7 @@ function createList(array) {
   let content = '';
 
   array.forEach((obj, index) => {
-    let listItem = `<li onClick="createContainer(${index} )">
+    let listItem = `<li onClick="createContainer(${index})">
     Projeto ${obj.id} - <span>${obj.title}</span>
   </li>`;
 
