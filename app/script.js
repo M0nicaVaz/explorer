@@ -24,7 +24,7 @@ const PROJECTS = [
     2
   ),
   new Project(
-    ' Rocket.sekt',
+    ' Rocket.sect',
     'Landing Page',
     './assets/project4.PNG',
     `https://codepen.io/WhosMonica/full/popLEjz`,
