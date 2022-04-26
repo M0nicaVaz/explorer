@@ -1,11 +1,9 @@
-class Project {
-  constructor(title, description, img, pen, id) {
-    this.title = title;
-    this.description = description;
-    this.img = img;
-    this.pen = pen;
-    this.id = id;
-  }
+function Project(title, description, img, pen, id) {
+  this.title = title;
+  this.description = description;
+  this.img = img;
+  this.pen = pen;
+  this.id = id;
 }
 
 const PROJECTS = [
@@ -46,22 +44,20 @@ const PROJECTS = [
   ),
 ];
 
-window.onload = createList(PROJECTS);
-
-function createList(array) {
+window.addEventListener('DOMContentLoaded', () => {
   let projectList = document.querySelector('#project-list');
   let content = '';
 
-  array.forEach((obj, index) => {
+  PROJECTS.forEach((project, index) => {
     let listItem = `<li onClick="createContainer(${index})">
-    Projeto ${obj.id} - <span>${obj.title}</span>
+    Projeto ${project.id} - <span>${project.title}</span>
   </li>`;
 
     content += listItem;
   });
 
   projectList.innerHTML = content;
-}
+});
 
 function toggleDisplay() {
   mainContainer = document.querySelector('#main-container');
@@ -76,14 +72,14 @@ function toggleDisplay() {
 function createContainer(index) {
   toggleDisplay();
 
-  obj = PROJECTS[index];
+  let project = PROJECTS[index];
 
-  let containerTitle = `<h2>${obj.title}</h2>`;
-  let pageLink = `<a href="${obj.pen}
+  let containerTitle = `<h2>${project.title}</h2>`;
+  let pageLink = `<a href="${project.pen}
       " target="_blank">
       Veja no CodePen!</a>`;
-  let descriptionP = `<p> ${obj.description} </p>`;
-  let img = `<img src="${obj.img}"/> `;
+  let descriptionP = `<p> ${project.description} </p>`;
+  let img = `<img src="${project.img}"/> `;
   let back = `<button onClick="toggleDisplay()"> voltar </button>`;
 
   hiddenContainer.innerHTML = `${containerTitle} ${descriptionP} ${pageLink} ${img} ${back}`;
