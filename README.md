@@ -4,7 +4,7 @@ This page was created as a way to document my progress as a beginner Web Develop
 
 ## Preview
 
-![Screenshot do site](https://raw.githubusercontent.com/M0nicaVaz/explorer/master/assets/ss1.png)
+![Screenshot do site](https://raw.githubusercontent.com/M0nicaVaz/explorer/master/assets/ss1.gif)
 
 ## Tech Stack
 
@@ -12,6 +12,6 @@ This page was created as a way to document my progress as a beginner Web Develop
 - [x] CSS Grid and FlexBox
 - [x] JavaScript
 
-## Check the link below:
+### Live:
 
 <https://m0nicavaz.github.io/explorer/>
