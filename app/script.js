@@ -60,9 +60,9 @@ window.addEventListener('DOMContentLoaded', () => {
 });
 
 function toggleDisplay() {
-  mainContainer = document.querySelector('#main-container');
-  hiddenContainer = document.querySelector('#hidden-container');
-  aboutContainer = document.querySelector('#about-container');
+  const mainContainer = document.querySelector('#main-container');
+  const hiddenContainer = document.querySelector('#hidden-container');
+  const aboutContainer = document.querySelector('#about-container');
 
   mainContainer.classList.toggle('display-none');
   hiddenContainer.classList.toggle('display-none');
@@ -82,5 +82,6 @@ function createContainer(index) {
   let img = `<img src="${project.img}"/> `;
   let back = `<button onClick="toggleDisplay()"> voltar </button>`;
 
+  const hiddenContainer = document.querySelector('#hidden-container');
   hiddenContainer.innerHTML = `${containerTitle} ${descriptionP} ${pageLink} ${img} ${back}`;
 }
