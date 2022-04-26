@@ -6,7 +6,6 @@
 
   --purple: rgb(207, 161, 253);
   --green: #a0faa6;
-  --yellow: #f1fa94;
   --blue: #8bfbf5;
 }
 
@@ -44,21 +43,24 @@ body {
   color: var(--light-bg);
   font-size: 1.6rem;
   font-family: 'Open Sans', sans-serif;
+  text-align: center;
+  display: grid;
 }
 
 .page-wrapper {
-  margin: auto;
+  align-self: center;
+  justify-self: center;
+
   padding: 2rem 2rem;
-  max-width: 100vw;
+  width: clamp(20rem, 20rem + 30vw, 50rem);
+
   min-height: 100vh;
 
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
   align-items: center;
-
   gap: 3rem;
-  text-align: center;
 }
 
 .logo {
@@ -71,9 +73,9 @@ body {
 h1 {
   font-weight: 500;
   font-variant: small-caps;
-  font-size: 8rem;
+  font-size: clamp(4rem, 4rem + 10vw, 10rem);
   text-align: right;
-  line-height: 5rem;
+  line-height: clamp(4rem, 3rem + 7vw, 7rem);
   color: var(--light-bg);
 
   position: relative;
@@ -92,7 +94,7 @@ h1::after {
 .about-container {
   text-align: right;
   height: 20rem;
-  width: 26rem;
+  width: 100%;
 
   display: flex;
   flex-direction: column;
@@ -104,19 +106,18 @@ h1::after {
 }
 
 .projects-container {
+  width: 100%;
   text-align: center;
 }
 
 .project-list {
   display: grid;
-
   gap: 2rem;
 }
 
 .project-list li {
   font-family: 'Akshar', sans-serif;
   font-weight: 400;
-  width: 26rem;
 
   text-align: right;
   font-variant: small-caps;
@@ -141,7 +142,7 @@ h1::after {
 }
 
 .rocket {
-  width: 15vw;
+  width: clamp(6vw, 6vw + 2rem, 15vw);
   position: absolute;
 
   transform: rotate(30deg);
@@ -235,6 +236,10 @@ footer {
 }
 
 @media screen and (min-width: 920px) {
+  .page-wrapper {
+    width: clamp(50rem, 50rem + 30vw, 125rem);
+  }
+
   .about-container {
     text-align: center;
     height: 20rem;
@@ -244,20 +249,19 @@ footer {
     flex-direction: column;
     gap: 1.5rem;
   }
+
   h1 {
-    font-size: 10rem;
     text-align: center;
-    line-height: 6rem;
   }
-  .rocket {
-    width: 6vw;
-  }
+
   .project-list {
+    width: 100%;
     padding: 0 2rem;
     display: grid;
     gap: 2.5rem;
     grid-template-columns: 1fr 1fr 1fr;
   }
+
   .display-none {
     display: none;
   }
