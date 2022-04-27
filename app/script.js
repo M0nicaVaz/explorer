@@ -1,9 +1,11 @@
-function Project(title, description, img, pen, id) {
-  this.title = title;
-  this.description = description;
-  this.img = img;
-  this.pen = pen;
-  this.id = id;
+class Project {
+  constructor(title, description, img, pen, id) {
+    this.title = title;
+    this.description = description;
+    this.img = img;
+    this.pen = pen;
+    this.id = id;
+  }
 }
 
 const PROJECTS = [
