@@ -28,20 +28,27 @@ const PROJECTS = [
     'Landing Page',
     './assets/project4.PNG',
     `https://codepen.io/WhosMonica/full/popLEjz`,
-    4
+    3
   ),
   new Project(
     'Formulário',
     'Tags de formulário, pseudo-classes e Flexbox.',
     './assets/project5.PNG',
     `https://codepen.io/WhosMonica/full/vYpVWvM`,
-    5
+    4
   ),
   new Project(
     'Space Cream',
     'Display Grid, responsividade e keyframes.',
     './assets/project6.PNG',
     `https://codepen.io/WhosMonica/full/dyJQXGZ`,
+    5
+  ),
+  new Project(
+    'FocusTimer',
+    'Um timer no estilo pomodoro | JavaScript e DOM',
+    './assets/project7.PNG',
+    'https://m0nicavaz.github.io/FocusTimer/',
     6
   ),
 ];
@@ -79,7 +86,7 @@ function createContainer(index) {
   let containerTitle = `<h2>${project.title}</h2>`;
   let pageLink = `<a href="${project.pen}
       " target="_blank">
-      Veja no CodePen!</a>`;
+      Ir para o projeto</a>`;
   let descriptionP = `<p> ${project.description} </p>`;
   let img = `<img src="${project.img}"/> `;
   let back = `<button onClick="toggleDisplay()"> voltar </button>`;
