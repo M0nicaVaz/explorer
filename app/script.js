@@ -47,7 +47,7 @@ const PROJECTS = [
   new Project(
     'FocusTimer',
     'Um timer no estilo pomodoro | JavaScript e DOM',
-    './assets/project7.PNG',
+    './assets/project7.gif',
     'https://m0nicavaz.github.io/FocusTimer/',
     6
   ),
