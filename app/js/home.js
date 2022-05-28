@@ -39,7 +39,7 @@ const createListElement = () => {
 
 const listTemplate = (project) => {
   const template = `<li>
-                  <a href="/${project.href}"> Projeto ${project.id} -
+                  <a href="explorer/${project.href}"> Projeto ${project.id} -
                   <span>${project.title}</span></a>
                     </li>`;
 
