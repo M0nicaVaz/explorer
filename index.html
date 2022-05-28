@@ -14,42 +14,17 @@
 
     <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon" />
 
-    <link rel="stylesheet" href="./app/style.css" />
+    <link rel="stylesheet" href="./app/css/style.css" />
   </head>
 
   <body>
-    <img
-      class="rocket"
-      src="./assets/Rocket-PNG-Free-Download.png"
-      alt="ilustração de foguete"
-    />
-
     <a href="https://www.linkedin.com/in/monica-vaz/" target="_blank">
       <img class="logo" src="./assets/logo.png" alt="MV"
     /></a>
-    <main class="page-wrapper">
-      <section class="about-container" id="about-container">
-        <h1>Monica vaz</h1>
-        <p>
-          Um lugar para guardar todos os meus desafios do Explorer, da
-          <a
-            href="https://www.rocketseat.com.br/explorer?utm_source=youtube&utm_medium=live_qr_code&utm_campaign=offer_explorer&utm_term=organic&utm_content=event-FL03"
-            target="_blank"
-          >
-            Rocketseat</a
-          >.
-        </p>
-      </section>
 
-      <section class="projects-container" id="main-container">
-        <ul class="project-list" id="project-list"></ul>
-      </section>
-
-      <section
-        class="hidden-container display-none"
-        id="hidden-container"
-      ></section>
-    </main>
+    <div class="page-wrapper">
+      <main id="root"></main>
+    </div>
 
     <footer>
       feito com 💜 por
@@ -57,6 +32,6 @@
         >Monica</a
       >
     </footer>
-    <script src="./app/script.js"></script>
+    <script src="./app/js/index.js" type="module"></script>
   </body>
 </html>

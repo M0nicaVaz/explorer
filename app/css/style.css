@@ -91,6 +91,12 @@ h1::after {
   right: 0;
 }
 
+.home-wrapper {
+  display: grid;
+  place-items: center;
+  gap: 2rem;
+}
+
 .about-container {
   text-align: right;
   height: 20rem;
@@ -107,7 +113,6 @@ h1::after {
 
 .projects-container {
   width: 100%;
-  text-align: center;
 }
 
 .project-list {
@@ -127,27 +132,14 @@ h1::after {
 }
 
 .project-list li:hover {
-  font-size: 2.2rem;
+  font-size: 1.8rem;
   color: var(--blue);
   cursor: pointer;
 }
 
-.project-list li > span {
-  font-size: 2.2rem;
+.project-list li span {
+  font-size: clamp(1.8rem, 1.6rem + 0.3vw, 2.2rem);
   color: var(--light-bg);
-}
-
-.purple {
-  color: hsl(270, 95%, 81%);
-}
-
-.rocket {
-  width: clamp(6vw, 6vw + 2rem, 15vw);
-  position: absolute;
-
-  transform: rotate(30deg);
-
-  animation: rocketship 5s cubic-bezier(0.4, 0.35, 0, 1) forwards;
 }
 
 .hidden-container {
@@ -161,11 +153,13 @@ h1::after {
 
   gap: 2rem;
 }
+
 .hidden-container h2 {
   align-self: center;
   font-weight: 400;
   letter-spacing: 0.2rem;
 }
+
 .hidden-container a {
   align-self: center;
   font-size: 1.6rem;
@@ -178,8 +172,10 @@ h1::after {
   pointer-events: none;
 }
 
-.hidden-container button {
+.hidden-container .btn {
   align-self: center;
+
+  display: inline-block;
 
   margin-top: 10px;
 
@@ -195,7 +191,7 @@ h1::after {
   color: var(--light-bg);
 }
 
-.hidden-container button:hover {
+.hidden-container .btn:hover {
   color: var(--blue);
   cursor: pointer;
 }
@@ -209,32 +205,6 @@ footer {
   width: 100vw;
 }
 
-.display-none {
-  display: none;
-}
-
-@keyframes rocketship {
-  0% {
-    left: 0vw;
-    top: 85vh;
-  }
-
-  50% {
-    left: 80vw;
-    top: 85vh;
-  }
-
-  95% {
-    transform: rotate(-65deg);
-  }
-
-  100% {
-    left: 80vw;
-    top: -100vh;
-    transform: rotate(-65deg);
-  }
-}
-
 @media screen and (min-width: 920px) {
   .page-wrapper {
     width: clamp(50rem, 50rem + 30vw, 125rem);
@@ -244,10 +214,6 @@ footer {
     text-align: center;
     height: 20rem;
     width: 50rem;
-
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
   }
 
   h1 {
@@ -258,11 +224,11 @@ footer {
     width: 100%;
     padding: 0 2rem;
     display: grid;
-    gap: 2.5rem;
+    gap: 3rem;
     grid-template-columns: 1fr 1fr 1fr;
   }
 
-  .display-none {
-    display: none;
+  .project-list li {
+    width: 30rem;
   }
 }
