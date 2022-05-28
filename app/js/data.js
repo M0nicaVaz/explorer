@@ -14,7 +14,7 @@ const PROJECTS = [
     'Móveis Planejados',
     '#moveis-planejados',
     'Conceitos básicos de HTML e CSS.',
-    './assets/project1.PNG',
+    './assets/project1.jpg',
     `https://codelive.io/WhosMonica/full/JjMprvQ`,
     1
   ),
@@ -22,7 +22,7 @@ const PROJECTS = [
     'Treine.me ',
     '#treine-me',
     'Tags semânticas do HTML.',
-    './assets/project2.PNG',
+    './assets/project2.jpg',
     `https://codelive.io/WhosMonica/full/MWrVaeZ`,
     2
   ),
@@ -30,7 +30,7 @@ const PROJECTS = [
     ' Rocket.sect',
     '#rocket-sect',
     'Landing Page',
-    './assets/project4.PNG',
+    './assets/project4.jpg',
     `https://codelive.io/WhosMonica/full/popLEjz`,
     3
   ),
@@ -38,7 +38,7 @@ const PROJECTS = [
     'Formulário',
     '#formulario',
     'Tags de formulário, pseudo-classes e Flexbox.',
-    './assets/project5.PNG',
+    './assets/project5.jpg',
     `https://codelive.io/WhosMonica/full/vYpVWvM`,
     4
   ),
@@ -46,7 +46,7 @@ const PROJECTS = [
     'Space Cream',
     '#space-cream',
     'Display Grid, responsividade e keyframes.',
-    './assets/project6.PNG',
+    './assets/project6.jpg',
     `https://codelive.io/WhosMonica/full/dyJQXGZ`,
     5
   ),
