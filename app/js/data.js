@@ -58,6 +58,22 @@ const PROJECTS = [
     'https://m0nicavaz.github.io/FocusTimer/',
     6
   ),
+  new Project(
+    'SPA Universe',
+    '#spa-universe',
+    'Uma SPA construída com Javascript puro',
+    './assets/project8.jpg',
+    'https://spa-universe.netlify.app/',
+    7
+  ),
+  new Project(
+    'GitFav',
+    '#gitfav',
+    'Um site para salvar seus usuários favoritos do GitHub | JavaScript Assíncrono e API',
+    './assets/project9.jpg',
+    'https://m0nicavaz.github.io/GitFav/',
+    8
+  ),
 ];
 
 export { PROJECTS };
