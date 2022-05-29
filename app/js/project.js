@@ -17,7 +17,7 @@ const createTemplate = (project) => {
                 Ir para o projeto</a>
             <p>${project.description}</p>
             <img src="${project.img}"/> 
-            <a class="btn" href=""> voltar </>
+            <a class="btn" href="/"> voltar </>
             `;
 
   return template;
