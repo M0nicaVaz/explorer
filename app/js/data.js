@@ -74,6 +74,14 @@ const PROJECTS = [
     'https://m0nicavaz.github.io/GitFav/',
     8
   ),
+  new Project(
+    'RocketNotes',
+    '#rocketnotes',
+    'Uma aplicação para guardar links e anotações | React & Styled-Components | Node & SQlite ',
+    './assets/project10.gif',
+    'http://userocketnotes.netlify.com/',
+    9
+  ),
 ];
 
 export { PROJECTS };
